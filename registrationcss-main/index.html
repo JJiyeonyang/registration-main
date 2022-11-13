@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="./jquery-3.6.1.js"></script>
+    <script src="./jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker({
+          prevText: "이전",
+          nextText: "다음",
+          monthNames: [
+            "JAN",
+            "FEB",
+            "MAR",
+            "APR",
+            "MAY",
+            "JUN",
+            "JUL",
+            "AUG",
+            "SEP",
+            "OCT",
+            "NOV",
+            "DEC",
+          ],
+          dayNamesMin: ["S", "M", "T", "W", "R", "F", "S"],
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".sign").slideToggle("fast");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#reset").click(function () {
+          $("form").each(function () {
+            this.reset();
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".button").click(function () {
+          alert("Please sign up carefully.");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>회원가입</h1>
+      <br />
+      <form action="" id="registration">
+        <div>
+          <label for="name">이름</label>
+          <input type="text" id="name" name="member" />
+        </div>
+        <br />
+        <div>
+          <label for="datepicker">생년월일</label>
+          <input type="text" id="datepicker" size="57" />
+        </div>
+        <br />
+        <p>레벨 선택</p>
+        <div>
+          <input type="radio" name="level" id="basic" />
+          <label for="level">초급</label>
+        </div>
+        <div>
+          <input type="radio" name="level" id="middle" />
+          <label for="level">중급</label>
+        </div>
+        <div>
+          <input type="radio" name="level" id="expert" />
+          <label for="level">상급</label>
+        </div>
+        <br />
+        <div>
+          <label for="email">이메일</label>
+          <input type="text" id="email" name="email" />
+          <br />
+          <label for="password">패스워드</label>
+          <input type="text" id="password" name="password" />
+        </div>
+        <br />
+        <div>
+          <label for="division">관심분야</label>
+          <select name="division" id="division">
+            <option value="it">IT</option>
+            <option value="design">디자인</option>
+            <option value="artandculture">문화예술</option>
+            <option value="math">수학</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div class="toggle">가입 전 안내문 읽기</div>
+        <div class="sign">
+          <h4 class="title">안내문</h4>
+          <p class="content">
+            개인정보보호법에 따라 아래 제공되는 개인정보는 <br />연구 목적
+            외에는 사용되지 않습니다.
+          </p>
+        </div>
+        <div class="button-area">
+          <div class="button">가입하기</div>
+          <div id="reset">
+            <span class="material-symbols-outlined"> refresh </span>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

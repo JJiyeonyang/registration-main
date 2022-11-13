@@ -1,0 +1,130 @@
+body {
+  display: block;
+  margin: 8px;
+}
+
+h1 {
+  border-bottom: 1px solid #111;
+  line-height: 200%;
+  margin: 10px 0;
+}
+
+section {
+  background-color: #f1f1f1;
+  width: 500px;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 100px auto;
+  position: relative;
+}
+
+form {
+  display: block;
+  margin: 0em;
+}
+
+p {
+  font-weight: bold;
+}
+
+div {
+  margin: 10px 0;
+  line-height: 130%;
+  font-weight: bold;
+}
+
+input {
+  border: 0;
+  border-radius: 4px;
+  padding: 9px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#email {
+  width: 89%;
+  border: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+#password {
+  width: 86%;
+  background-color: #fff;
+  border: 0;
+  color: #333;
+}
+
+option {
+  background-color: #fff;
+}
+
+#division {
+  width: 170px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.toggle {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 14px;
+  color: orange;
+}
+
+.sign {
+  background-color: #fff;
+  padding: 5px 15px 10px;
+  margin: 0 0 20px;
+  border-radius: 5px;
+}
+
+.sign .title {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sign p {
+  font-size: 13px;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.button-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #111;
+  color: white;
+  width: 80%;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+#reset {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#reset .material-symbols-outlined {
+  position: absolute;
+}
